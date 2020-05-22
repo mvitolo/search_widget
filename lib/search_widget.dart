@@ -1,9 +1,9 @@
-library search_widget;
-
 import 'package:flutter/material.dart';
-import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 
-import 'widget/no_item_found.dart';
+import 'package:flutter/services.dart';
+import 'dart:async';
+
+// https://github.com/apgapg/search_widget/issues/15
 
 typedef QueryListItemBuilder<T> = Widget Function(T item);
 typedef OnItemSelected<T> = void Function(T item);
