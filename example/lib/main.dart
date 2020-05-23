@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 16,
             ),
-            if (_show)
+            _show ?
               SearchWidget<LeaderBoard>(
                 dataList: list,
                 hideSearchBoxWhenItemSelected: false,
@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                     _selectedItem = item;
                   });
                 },
-              ),
+              ) : Container() ,
             const SizedBox(
               height: 32,
             ),
